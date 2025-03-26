@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Prosjektliste</title>
+    <script>
+        function visProsjektliste() {
+            const prosjekter = ["Prosjekt Alpha", "Prosjekt Beta", "Prosjekt Gamma"];
+            let liste = "<ul>";
+            prosjekter.forEach(p => liste += `<li>${p}</li>`);
+            liste += "</ul>";
+            document.getElementById("prosjektListe").innerHTML = liste;
+        }
+    </script>
+</head>
+<body>
+    <h3>Mine Prosjekter</h3>
+    <button onclick="visProsjektliste()">Vis prosjekter</button>
+    <div id="prosjektListe" style="margin-top: 10px;"></div>
+</body>
+</html>
